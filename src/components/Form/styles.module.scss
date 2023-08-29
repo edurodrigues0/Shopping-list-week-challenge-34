@@ -1,0 +1,115 @@
+.container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 326px 72*2px 168px 40px;
+  column-gap: 0.75rem;
+
+  button[type=submit] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+.inputFormCaintainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  input[type=text] {
+    height: 100%;
+    padding: 0.75rem;
+    border-radius: 6px;
+    background-color: var(--gray-500);
+    border: 1px solid var(--gray-300);
+    color: var(--gray-100);
+
+    &:focus {
+      border: 1px solid var(--purple-light);
+      outline: none;
+    }
+  }
+
+  select {
+    padding: 0.75rem;
+    background-color: var(--gray-500);
+    border-radius: 6px;
+    border: none;
+
+    &:focus {
+      border: 1px solid var(--purple-light);
+      outline: none;
+    }
+  }
+}
+
+.submitButton {
+  border-radius: 9999px;
+  height: 2.5rem;
+  width: 2.5rem;
+  border: none;
+
+  align-self: end;
+  justify-self: center;
+
+  background-color: var(--purple);
+  color: var(--gray-100);
+
+  transition: background-color 0.2s ease-out;
+
+  &:hover {
+    background-color: var(--purple-dark);
+  }
+}
+
+.quantityInputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  input[type=number] {
+    background-color: var(--gray-500);
+    border: 1px solid var(--gray-300);
+    color: var(--gray-50);
+    padding: 0.75rem;
+    width: 72px;
+    border-radius: 6px 0 0 6px;
+    grid-column-start: 1;
+
+    &:focus {
+      border: 1px solid var(--purple-light);
+      outline: none;
+    }
+  }
+
+  button[type=button] {
+    grid-column-start: 3;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+label:has(+ input:focus) {
+  color: var(--purple-light);
+}
+
+label:has(+ select:focus) {
+  color: var(--purple-light);
+}
+
+label:has(+ button:focus) {
+  color: var(--purple-light);
+}
+
+label:has(+ div > input:focus) {
+  color: var(--purple-light);
+}
+
+label:has(+ div > button[type=button]:focus) {
+  color: var(--purple-light);
+}

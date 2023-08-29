@@ -1,0 +1,12 @@
+{
+  "items": [
+    {
+      "id": "a66acaa0-46de-edbe-5c57-e8bac8d17fd0",
+      "amount": "10",
+      "category": "fruta",
+      "item": "Banana",
+      "unity": "Un.",
+      "checked": true
+    }
+  ]
+}

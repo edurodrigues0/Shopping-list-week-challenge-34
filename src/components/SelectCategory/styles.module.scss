@@ -1,0 +1,62 @@
+.selectTrigger {
+  height: 100%;
+  padding: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: var(--gray-200);
+  background-color: var(--gray-400);
+  border: 1px solid var(--gray-300);
+  border-radius: 6px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+
+  &:focus {
+    border: 1px solid var(--purple-light);
+    outline: none;
+  }
+}
+
+.selectContent {
+  overflow: hidden;
+  width: 10.5rem;
+  background-color: var(--gray-400);
+  border: 1px solid var(--gray-300);
+  border-radius: 4px;
+}
+
+.selectItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  padding: 0.75rem;
+  outline: none;
+  border: 1px solid transparent;
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  &[data-state=checked] {
+    background-color: var(--gray-300);
+  }
+
+  &:hover {
+    outline: none;
+    border: 1px solid var(--purple);
+  }
+}
+
+.selectSeparator {
+  height: 1px;
+  width: 100;
+  background-color: var(--gray-300);
+}

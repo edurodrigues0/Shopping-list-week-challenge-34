@@ -1,0 +1,26 @@
+.checkBoxContainer {
+  width: 1rem;
+  height: 1rem;
+  background-color: transparent;
+  border: 1px solid var(--purple);
+  border-radius: 4px;
+  color: var(--gray-100);
+  overflow: hidden;
+
+  align-self: center;
+
+  &:focus {
+    background-color: var(--purple);
+    outline: 1px solid (--purple-light);
+  }
+
+  &[data-state=checked] {
+    border: 1px solid transparent;
+    background-color: var(--success);
+
+    &:hover {
+      background-color: var(--success-light);
+    }
+  }
+}
+

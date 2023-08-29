@@ -1,0 +1,37 @@
+.tagCategoryContainer {
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  margin-right: 0.75rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-weight: 600;
+}
+
+.tagOrange {
+  background-color: var(--orange-dark);
+  color: var(--orange);
+}
+
+.tagYellow {
+  background-color: var(--yellow-dark);
+  color: var(--yellow);
+}
+
+.tagGreen {
+  background-color: var(--green-dark);
+  color: var(--green);
+}
+
+.tagBlue {
+  background-color: var(--blue-dark);
+  color: var(--blue);
+}
+
+.tagPink {
+  background-color: var(--pink-dark);
+  color: var(--pink);
+}
+
