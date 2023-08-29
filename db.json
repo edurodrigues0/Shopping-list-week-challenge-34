@@ -1,12 +1,36 @@
 {
   "items": [
     {
-      "id": "a66acaa0-46de-edbe-5c57-e8bac8d17fd0",
-      "amount": "10",
+      "id": "1d6925b9-5bc2-330d-ce0a-8cbc529dbec0",
+      "amount": "3",
+      "category": "legume",
+      "item": "Cenoura",
+      "unity": "Kg",
+      "checked": false
+    },
+    {
+      "id": "254fb5a6-f7be-882c-d218-235a377f4811",
+      "amount": "6",
+      "category": "bebida",
+      "item": "Leite",
+      "unity": "L",
+      "checked": false
+    },
+    {
+      "id": "8f3d011f-c750-c526-2fd9-604a80203116",
+      "amount": "6",
+      "category": "carne",
+      "item": "Peito de frango",
+      "unity": "Kg",
+      "checked": false
+    },
+    {
+      "id": "05425f7f-c4e9-f68f-a5c5-fca31897a67d",
+      "amount": "6",
       "category": "fruta",
       "item": "Banana",
       "unity": "Un.",
-      "checked": true
+      "checked": false
     }
   ]
 }

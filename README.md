@@ -4,7 +4,7 @@ O desafio Lista de Compras é um checklist web e mobile, para que você possa fa
 
 Esse desafio foi criado para o #boracodar, um projeto da Rocketseat com desafios semanais para praticar desenvolvendo como achar melhor e evoluir seu código para o próximo nível.
 
-- [@figma-layout](https://www.figma.com/community/file/1276169043084346929/Lista-de-Compras-E280A2-Desafio-34) uses 
+- [@figma-layout](https://www.figma.com/community/file/1276169043084346929/Lista-de-Compras-E280A2-Desafio-34)
 
 ### Ajustes e melhorias
 

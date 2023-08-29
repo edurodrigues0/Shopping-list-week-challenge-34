@@ -25,13 +25,18 @@ export function Form() {
         item,
       }
     })
-  }
 
+    setUnity("Un.")
+    setItem("")
+    setAmount("")
+  }
+  
   return (
     <form className={styles.container}>
       <div className={styles.inputFormCaintainer}>
         <label htmlFor="item">Item</label>
         <input
+          value={item}
           type="text"
           id="item"
           onChange={(e) => setItem(e.target.value)}
@@ -42,11 +47,13 @@ export function Form() {
         <label htmlFor="quantity">Quantidade</label>
         <div className={styles.quantityInputs}>
           <input
+            value={amount}
             type="number"
             id="quantity"
             onChange={(e) => setAmount(e.target.value)}
           />
           <SelectQuantity
+            value={unity}
             defaultValue={unity}
             onValueChange={(value) => setUnity(value)}
           />
@@ -56,6 +63,7 @@ export function Form() {
       <div className={styles.inputFormCaintainer}>
         <label htmlFor="category">Categoria</label>
         <SelectCategory
+          value={category}
           required        
           onValueChange={(value) => setCategory(value)}
         />

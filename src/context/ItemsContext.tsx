@@ -25,7 +25,7 @@ interface Items {
 }
 
 interface ItemsData {
-  data: Items
+  data: Omit <Items, 'id' | 'checked'>
 }
 
 export function ItemsContextProvider({children}: ItemsContextProps) {
@@ -68,15 +68,6 @@ export function ItemsContextProvider({children}: ItemsContextProps) {
         console.log("Erro ao atualizar o item no servidor.");
       }
     });
-    
-    // items.filter((item) => {
-    //   if (item.id === id) {
-    //     item.checked = isChecked
-    //     api.put(`/items/${id}`, {checked: isChecked}).then((response) => {
-    //       console.log(response)
-    //     })
-    //   }
-    // })
   }
 
   return (
